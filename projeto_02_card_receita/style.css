@@ -1,0 +1,51 @@
+/* 1. ESTILOS GERAIS PARA A PÁGINA */
+body {
+    font-family: 'Georgia', serif; /* Fonte elegante */
+    background-color: #f5f5f5;     /* Fundo claro */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* 2. ESTILOS DO CARD DE RECEITA */
+.recipe-card {
+    width: 350px;                 /* Largura fixa do card */
+    background-color: #ffffff;    /* Fundo branco */
+    border-radius: 15px;          /* Cantos arredondados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden;             /* Mantém imagem dentro dos cantos arredondados */
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;      /* Altura fixa */
+    object-fit: cover;  /* Mantém proporção e preenche o espaço */
+    display: block;
+}
+
+
+/* 4. ESTILOS DO CONTEÚDO DE TEXTO */
+.recipe-content {
+    padding: 25px; /* Espaço interno entre borda do card e texto */
+}
+
+.recipe-title {
+    font-size: 1.5rem; /* 24px */
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe-description {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #666;
+    margin-bottom: 0;
+}
+.cards-container {
+    display: flex;
+    gap: 20px; 
+}
