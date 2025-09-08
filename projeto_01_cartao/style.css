@@ -1,0 +1,101 @@
+/* 1. ESTILOS GERAIS PARA A PÁGINA */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Fundo animado com bolas roxas */
+@keyframes moveBall {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(100px, 150px); }
+    100% { transform: translate(0, 0); }
+}
+
+.ball {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(128, 0, 128, 0.6); /* Roxo semitransparente */
+    animation: moveBall 8s ease-in-out infinite alternate;
+}
+
+.ball:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    animation-duration: 10s;
+    background: rgba(200, 0, 200, 0.5);
+    top: 50%;
+    left: 70%;
+}
+
+.ball:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    animation-duration: 12s;
+    background: rgba(150, 0, 150, 0.4);
+    top: 30%;
+    left: 20%;
+}
+
+/* 2. ESTILOS DO CARTÃO */
+.business-card {
+    width: 400px;
+    padding: 30px;
+    border: 2px solid #8a2be2;
+    background: linear-gradient(145deg, #1a0a29, #2c003e);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Mantém o cartão acima das bolas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito hover no cartão */
+.business-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.9);
+}
+
+.card-name {
+    margin: 0;
+    font-size: 28px;
+    color: #ffddff;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #d3b3ff;
+}
+
+.card-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #8a2be2;
+}
+
+.card-contact {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #e0c0ff;
+}
+
+.card-contact a {
+    color: #e0c0ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-contact a:hover {
+    color: #ff99ff;
+}

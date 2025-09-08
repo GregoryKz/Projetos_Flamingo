@@ -1,0 +1,94 @@
+Cartão de Apresentação Digital – Projeto Front-End
+Descrição
+
+Este projeto é um exemplo simples de cartão de apresentação digital, construído com HTML e CSS puro, com foco no Box Model e efeitos visuais modernos. O cartão possui um fundo animado com bolas roxas em movimento, bordas estilizadas e efeitos de hover para dar mais interatividade.
+
+É ideal para iniciante e intermediários em front-end praticarem conceitos de CSS, centralização, padding, margin, border, box-shadow e animações.
+
+Visual do Projeto
+
+Cartão centralizado na tela.
+
+Fundo preto com bolas roxas animadas se movendo.
+
+Nome, título, e informações de contato visíveis e estilizadas.
+
+Efeito de hover no cartão (levita e aumenta sombra).
+
+Estrutura de Arquivos
+projeto-01-cartao-digital/
+├── index.html      # Estrutura HTML do cartão
+└── style.css       # Estilos e animações do cartão e fundo
+
+Como Abrir o Projeto
+
+Clone ou faça download do projeto.
+
+Abra o arquivo index.html em qualquer navegador moderno.
+
+Observe o cartão centralizado com as bolas animadas no fundo.
+
+Detalhes do Código
+index.html
+
+Semântico: <h1> para nome, <p> para título e contatos, <a> para e-mail clicável.
+
+Estrutura:
+
+div.ball – Cria as bolas animadas de fundo.
+
+div.business-card – Contêiner do cartão com todos os elementos.
+
+Acessibilidade: Uso de texto legível e links com contraste adequado.
+
+style.css
+
+Body
+
+display: flex; justify-content: center; align-items: center; – Centraliza o cartão na tela.
+
+overflow: hidden; – Evita que as bolas ultrapassem a tela.
+
+Bolas Animadas
+
+@keyframes moveBall – Define o movimento das bolas.
+
+.ball – Tamanho, cor, borda arredondada e animação.
+
+Diferentes nth-child para trajetórias e velocidades distintas.
+
+Cartão (.business-card)
+
+width e padding – Define tamanho e espaçamento interno (Box Model).
+
+border, border-radius, box-shadow – Aparência moderna e efeitos visuais.
+
+transition e :hover – Efeito de interação suave ao passar o mouse.
+
+Elementos Internos
+
+.card-name, .card-title, .card-contact – Margin e cores ajustadas para hierarquia visual.
+
+Links <a> estilizados para mostrar que são clicáveis.
+
+Conceitos Praticados
+
+Box Model: padding, margin, border.
+
+Flexbox: Centralização vertical e horizontal.
+
+CSS Animations: Movimento das bolas.
+
+Gradientes e cores: Estilo moderno e visual atrativo.
+
+Hover Effects: Interatividade ao usuário.
+
+Como Personalizar
+
+Alterar cores das bolas ou do cartão.
+
+Ajustar tamanho do cartão (width) e espaçamento (padding).
+
+Modificar velocidade das animações (animation-duration).
+
+Trocar o conteúdo do cartão (nome, título, contato).
