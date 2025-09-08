@@ -1,0 +1,58 @@
+/* 1. ESTILOS GERAIS PARA A PÁGINA */
+body {
+    font-family: 'Lato', sans-serif; /* Fonte moderna */
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Respiro para telas pequenas */
+}
+
+/* 2. COMPONENTE DO POST */
+.post-card {
+    display: flex;           /* Flex container: itens lado a lado */
+    align-items: center;     /* Alinhamento vertical central */
+    gap: 20px;               /* Espaçamento entre imagem e texto */
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;        /* Garante que imagem respeite os cantos arredondados */
+}
+
+/* 3. ITENS FILHOS */
+.post-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;       /* Mantém proporção e cobre o espaço sem distorcer */
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2d3748;
+}
+
+.post-excerpt {
+    margin-bottom: 0;
+    color: #718096;
+    line-height: 1.6;
+}
+
+/* 4. DESAFIO: RESPONSIVIDADE */
+@media (max-width: 500px) {
+    .post-card {
+        flex-direction: column; /* Empilha os itens em telas pequenas */
+    }
+
+    .post-image {
+        width: 100%;           /* A imagem ocupa toda a largura do card */
+        height: auto;          /* Ajusta altura automaticamente */
+    }
+}
