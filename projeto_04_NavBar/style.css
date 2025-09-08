@@ -1,0 +1,64 @@
+/* 1. ESTILOS GERAIS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* 2. CABEÇALHO */
+.main-header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Container interno para centralizar logo + nav */
+.header-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;
+    gap: 50px; /* Espaço entre logo e nav */
+}
+
+/* 3. LOGO */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* 4. NAVEGAÇÃO */
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+/* Hover */
+.main-nav a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Link ativo */
+.main-nav a.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
