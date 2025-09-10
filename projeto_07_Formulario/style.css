@@ -1,0 +1,154 @@
+/* 1. ESTILOS GERAIS */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* fundo tech escuro em degradê */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  color: #e0e6ed;
+}
+
+/* 2. ESTILOS DO CONTAINER DO FORMULÁRIO */
+.form-container {
+  background: #1e1e2f; /* tom escuro sofisticado */
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+.form-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00f2fe; /* azul ciano brilhante */
+  margin-bottom: 8px;
+}
+
+.form-subtitle {
+  color: #b0b8c4;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+/* 3. ESTILOS DOS CAMPOS DO FORMULÁRIO */
+.form-group {
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #9aa0ac;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  background-color: #2b2b3c;
+  color: #e0e6ed;
+
+  border: 1px solid #3a3a52;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #777c8a;
+}
+
+/* Campo de texto grande */
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Foco */
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8e2de2; /* roxo vibrante */
+  background-color: #1c1c2c;
+  box-shadow: 0 0 0 4px rgba(142, 45, 226, 0.4); /* glow tech */
+}
+
+/* Checkbox de termos */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #00f2fe; /* ciano brilhante */
+}
+
+.checkbox-group label {
+  margin: 0;
+  font-weight: 500;
+  color: #b0b8c4;
+  cursor: pointer;
+}
+
+/* 4. ESTILOS DO BOTÃO DE ENVIO */
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* degradê roxo tech */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 6px 20px rgba(142, 45, 226, 0.5);
+}
+
+/* 5. ANIMAÇÕES */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 6. RESPONSIVIDADE */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 30px 20px;
+  }
+
+  .form-title {
+    font-size: 1.4rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 14px;
+  }
+}
